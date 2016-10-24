@@ -18,13 +18,6 @@ describe("Airport", function(){
   });
 
   it('can confirm if a plane is present', function(){
-    var say = function (something) {
-
-      console.log("hello again");
-      return something;
-    };
-    var planeCheck = airport.isPlanePresent;
-
     expect(airport.isPlanePresent(plane)).toBe(false);
     airport.acceptPlane(plane);
     expect(airport.isPlanePresent(plane)).toBe(true);
